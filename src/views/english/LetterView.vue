@@ -1,7 +1,7 @@
 <template>
   <a-tabs>
     <a-tab-pane key="1" tab="学习">
-      <audio id="audio-player" controls :src="audioUrl" autoplay="false"></audio>
+      <audio id="audio-player" :src="audioUrl" autoplay="false"></audio>
       <a-row>
         <button
             class="letter-box"
@@ -9,7 +9,7 @@
             :key="char"
             @click="playAudio(char)"
         >
-          {{char}}{{lowercase[index]}}
+          {{char}} {{lowercase[index]}}
         </button>
       </a-row>
     </a-tab-pane>
