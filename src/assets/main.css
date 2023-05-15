@@ -5,15 +5,66 @@
     height: 100%;
 }
 
+#app .ant-layout-content{
+    background-image: url("/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#app .ant-breadcrumb{
+    padding: 16px 20px;
+    color: #fff
+}
+
+#app .ant-breadcrumb a{
+    color: rgba(255, 255, 255, 0.45);
+}
+
+#app .ant-breadcrumb > span:last-child {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+#app .main-content {
+    background-color: rgba(255, 255, 255, 0.60);
+    background-image: url("/content-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#app .ant-card {
+    background-image: url("/card-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+#app .ant-tabs{
+    color: #fff;
+}
+
+#app .ant-form-item-label > label{
+    color: #fff;
+}
+
 .friendly-btn {
     width: 200px;
     height: 200px;
     margin: 20px;
     border: solid 1px #d9d9d9;
-    background-color: #ffffff;
     font-size: 50px;
     line-height: 200px;
     text-align: center;
+    background-image: url("/card-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
 }
 .friendly-btn:hover {
     border-color: #40a9ff;

@@ -9,6 +9,7 @@
     "lint": "eslint sv-education --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@ant-design/icons-vue": "^6.1.0",
     "ant-design-vue": "^3.2.20",
     "pinia": "^2.0.36",
     "vue": "^3.3.2",

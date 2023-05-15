@@ -2,7 +2,14 @@
   <a-layout class="layout">
     <a-layout-header>
       <div class="logo" @click="goHome">
-        <a-image :src="`${baseUrl}/logo.svg`" :preview="false"></a-image>
+        <a-image
+            :src="`${baseUrl}/logo.svg`"
+            :preview="false"
+            :height="56"
+            :width="56"
+            style="margin-top: -16px"
+        ></a-image>
+        <span class="title">银小维Edu</span>
       </div>
       <a-menu
           v-model:selectedKeys="selectedKeys"
@@ -16,9 +23,9 @@
         <a-menu-item key="chinese">语文</a-menu-item>
       </a-menu>
     </a-layout-header>
-    <a-layout-content style="padding: 0 50px">
-      <a-breadcrumb style="margin: 16px 0">
-        <a-breadcrumb-item v-for="item in breadItem.items" :key="item" :href="item.href">
+    <a-layout-content>
+      <a-breadcrumb>
+        <a-breadcrumb-item v-for="item in breadItem.items" :key="item" :href="item.href" @click="select({key: item.href})">
           {{ item.name ? item.name : item }}
         </a-breadcrumb-item>
       </a-breadcrumb>
@@ -41,7 +48,8 @@ export default {
   },
   methods: {
     select(item) {
-      this.$router.push(item.key)
+      console.log(item)
+      this.$router.push(`/${item.key}`)
     },
     goHome() {
       this.selectedKeys = []
@@ -50,7 +58,7 @@ export default {
   },
   watch: {
     '$route.name'(){
-      this.selectedKeys = [this.$route.name]
+      this.selectedKeys = [this.$route.name.split('-')[0]]
     }
   }
 }
@@ -65,16 +73,22 @@ export default {
   height: calc(100% - 64px);
 }
 .main-content{
-  background: #fff;
-  padding: 24px;
-  height: calc(100% - 94px);
+  padding: 0 24px;
+  height: calc(100% - 54px);
   overflow: auto;
 }
 .logo{
-  width: 56px;
-  height: 56px;
+  width: 200px;
+  height: 64px;
   float: left;
-  margin-top: -4px;
+}
+.logo .title {
+  height: 100%;
+  color: #fff;
+  font-size: 24px;
+  line-height: 64px;
+  margin-left: 16px;
+  display: inline-block;
 }
 .ant-row-rtl #components-layout-demo-top .logo {
   float: right;
