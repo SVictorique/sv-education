@@ -1,9 +1,7 @@
 <template>
   <a-tabs>
     <a-tab-pane key="1" tab="学习">
-      <audio id="audio-player">
-        <source :src="audioUrl" />
-      </audio>
+      <audio id="audio-player" controls :src="audioUrl" autoplay="false"></audio>
       <a-row>
         <button
             class="letter-box"
@@ -34,8 +32,16 @@ export default {
   },
   methods: {
     playAudio(letter) {
-      this.audioUrl = `${this.baseUrl}/audio/letters/${letter.toUpperCase()}.wav`
-      document.getElementById('audio-player').play()
+      const url = `${this.baseUrl}/audio/letters/${letter.toUpperCase()}.wav`
+      const audio = document.getElementById('audio-player')
+      if (this.audioUrl === url) {
+        audio.play()
+      } else {
+        this.audioUrl = url;
+        audio.oncanplay = () => {
+          audio.play()
+        };
+      }
     }
   },
   beforeMount() {
