@@ -1,7 +1,9 @@
 <template>
   <a-tabs>
     <a-tab-pane key="1" tab="学习">
-      <audio id="audio-player" :src="audioUrl"></audio>
+      <audio id="audio-player">
+        <source :src="audioUrl" />
+      </audio>
       <a-row>
         <button
             class="letter-box"

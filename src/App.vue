@@ -2,7 +2,7 @@
   <a-layout class="layout">
     <a-layout-header>
       <div class="logo" @click="goHome">
-        <a-image src="/logo.svg" :preview="false"></a-image>
+        <a-image :src="`${baseUrl}/logo.svg`" :preview="false"></a-image>
       </div>
       <a-menu
           v-model:selectedKeys="selectedKeys"
@@ -34,6 +34,7 @@ import {useBreadItem} from "./stores/breadItem";
 export default {
   data() {
     return {
+      baseUrl: import.meta.env.BASE_URL,
       breadItem: useBreadItem(),
       selectedKeys: []
     }
