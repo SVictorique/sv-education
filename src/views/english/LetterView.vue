@@ -20,12 +20,13 @@
 </template>
 
 <script>
-import {useBreadItem} from "../../stores/breadItem";
+import {useBreadItem} from "@/stores/breadItem";
 
 export default {
   name: "LetterView",
   data() {
     return {
+      baseUrl: import.meta.env.BASE_URL,
       audioUrl: '',
       lowercase: "abcdefghijklmnopqrstuvwxyz".split(""),
       uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(""),
@@ -33,7 +34,7 @@ export default {
   },
   methods: {
     playAudio(letter) {
-      this.audioUrl = `/public/audio/letters/${letter.toUpperCase()}.wav`
+      this.audioUrl = `${this.baseUrl}/audio/letters/${letter.toUpperCase()}.wav`
       document.getElementById('audio-player').play()
     }
   },
