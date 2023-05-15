@@ -18,7 +18,9 @@
     </a-layout-header>
     <a-layout-content style="padding: 0 50px">
       <a-breadcrumb style="margin: 16px 0">
-        <a-breadcrumb-item v-for="item in breadItem.items" :key="item">{{ item }}</a-breadcrumb-item>
+        <a-breadcrumb-item v-for="item in breadItem.items" :key="item" :href="item.href">
+          {{ item.name ? item.name : item }}
+        </a-breadcrumb-item>
       </a-breadcrumb>
       <div class="main-content">
         <RouterView />
@@ -60,12 +62,12 @@ export default {
 }
 .layout .ant-layout-content {
   height: calc(100% - 64px);
-  overflow: auto;
 }
 .main-content{
   background: #fff;
   padding: 24px;
   height: calc(100% - 94px);
+  overflow: auto;
 }
 .logo{
   width: 56px;

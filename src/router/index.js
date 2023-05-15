@@ -20,6 +20,11 @@ const router = createRouter({
       component: () => import('../views/EnglishView.vue')
     },
     {
+      path: '/english/letter',
+      name: 'english-letter',
+      component: () => import('../views/english/LetterView.vue')
+    },
+    {
       path: '/chinese',
       name: 'chinese',
       component: () => import('../views/ChineseView.vue')
