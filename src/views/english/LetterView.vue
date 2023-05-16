@@ -139,11 +139,10 @@ export default {
   font-size: 50px;
   line-height: 200px;
   text-align: center;
-  background-image: url("/item-bg.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  color: #fff;
+  /*background-image: url("/item-bg.jpg");*/
+  background: var(--image-background);
+  background-size: var(--image-background-size);
+  color: #000;
 }
 .letter-box:hover{
   border-color: #40a9ff;

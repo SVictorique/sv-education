@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import {useBreadItem} from "../stores/breadItem";
+import {useBreadItem} from "@/stores/breadItem";
 export default {
   name: "MathView",
   beforeMount() {
