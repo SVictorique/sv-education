@@ -1,4 +1,4 @@
-import{_ as m,u,r as n,o as x,c as h,w as a,a as t,b as c}from"./index-6da11f78.js";const d={name:"MathView",beforeMount(){u().set("数学")},methods:{go(e){this.$router.push(e)}}},i=c("pre",null,`整数部分：
+import{_ as m,u as x,r as n,o as h,c as d,w as a,a as t,b as c}from"./index-673b517b.js";const i={name:"MathView",data(){return{baseUrl:"/sv-education/"}},beforeMount(){x().set("数学")},methods:{go(e){this.$router.push(e)}}},f=c("pre",null,`整数部分：
 
 十进制计数法：一（个）、十、百、千、万……都叫做计数单位.其中“一”是计数的基本单位.10个1是10,10个10是100……每相邻两个计数单位之间的进率都是十.这种计数方法叫做十进制计数法
 
@@ -423,4 +423,4 @@ Y=2x表示变量之间的关系,x是自变量,可以取定义域内任何数,y�
 2、平面图形或物体表面的大小叫做面积.
 
 3、常见图形的周长和面积计算公式
-        `,-1);function f(e,b,g,v,y,o){const r=n("a-image"),_=n("a-typography-paragraph"),s=n("a-tab-pane"),p=n("a-row"),l=n("a-tabs");return x(),h(l,null,{default:a(()=>[t(s,{key:"1",tab:"概述"},{default:a(()=>[t(r,{src:"/math-outline.jpg",preview:!1}),t(_,null,{default:a(()=>[i]),_:1})]),_:1}),t(s,{key:"2",tab:"目录"},{default:a(()=>[t(p,null,{default:a(()=>[c("button",{onClick:b[0]||(b[0]=A=>o.go("/math/calculate")),class:"friendly-btn round"},"🧮计算")]),_:1})]),_:1})]),_:1})}const w=m(d,[["render",f]]);export{w as default};
+        `,-1);function v(e,b,g,y,o,r){const _=n("a-image"),l=n("a-typography-paragraph"),s=n("a-tab-pane"),p=n("a-row"),u=n("a-tabs");return h(),d(u,null,{default:a(()=>[t(s,{key:"1",tab:"概述"},{default:a(()=>[t(_,{src:`${o.baseUrl}/math-outline.jpg`,preview:!1},null,8,["src"]),t(l,null,{default:a(()=>[f]),_:1})]),_:1}),t(s,{key:"2",tab:"目录"},{default:a(()=>[t(p,null,{default:a(()=>[c("button",{onClick:b[0]||(b[0]=A=>r.go("/math/calculate")),class:"friendly-btn round"},"🧮计算")]),_:1})]),_:1})]),_:1})}const w=m(i,[["render",v]]);export{w as default};

@@ -1,6 +1,6 @@
 <template>
   <a-space direction="vertical">
-    <a-image src="/math-add.jpeg" :preview="false"></a-image>
+    <a-image :src="`${baseUrl}/math-add.jpeg`" :preview="false"></a-image>
     <a-typography-text><pre>凑十法核心口诀：看大数，分小数。凑成10，加剩数。</pre></a-typography-text>
     <a-typography-paragraph>
       <pre>
@@ -27,7 +27,12 @@
 
 <script>
 export default {
-  name: "AdditionView"
+  name: "AdditionView",
+  data() {
+    return {
+      baseUrl: import.meta.env.BASE_URL,
+    };
+  },
 }
 </script>
 

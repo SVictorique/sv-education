@@ -1,6 +1,6 @@
 <template>
   <a-space direction="vertical">
-    <a-image src="/math-sub.webp" :preview="false"></a-image>
+    <a-image :src="`${baseUrl}/math-sub.webp`" :preview="false"></a-image>
     <a-typography-text><pre>破十法核心口诀：看大数，分出10，一减一加算得数。</pre></a-typography-text>
     <a-typography-text><pre>平十法核心口诀：分小数，连续相减算得数。</pre></a-typography-text>
     <a-typography-text><pre>借十法核心口诀：看大数，分出10，减小数，加剩数。</pre></a-typography-text>
@@ -20,7 +20,12 @@
 
 <script>
 export default {
-  name: "SubtractionView"
+  name: "SubtractionView",
+  data() {
+    return {
+      baseUrl: import.meta.env.BASE_URL,
+    };
+  },
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <a-tabs>
     <a-tab-pane key="1" tab="概述">
-      <a-image src="/math-outline.jpg" :preview="false"></a-image>
+      <a-image :src="`${baseUrl}/math-outline.jpg`" :preview="false"></a-image>
       <a-typography-paragraph>
         <pre>
 整数部分：
@@ -444,6 +444,11 @@ Y=2x表示变量之间的关系,x是自变量,可以取定义域内任何数,y�
 import {useBreadItem} from "@/stores/breadItem";
 export default {
   name: "MathView",
+  data() {
+    return {
+      baseUrl: import.meta.env.BASE_URL,
+    };
+  },
   beforeMount() {
     const items = useBreadItem()
     items.set('数学')

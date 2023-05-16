@@ -1,10 +1,15 @@
 <template>
-  <a-image src="/math-mul.jpeg" :preview="false"></a-image>
+  <a-image :src="`${baseUrl}/math-mul.jpeg`" :preview="false"></a-image>
 </template>
 
 <script>
 export default {
-  name: "MultiplicationView"
+  name: "MultiplicationView",
+  data() {
+    return {
+      baseUrl: import.meta.env.BASE_URL,
+    };
+  },
 }
 </script>
 
