@@ -15,6 +15,11 @@ const router = createRouter({
       component: () => import('../views/MathView.vue')
     },
     {
+      path: '/math/calculate',
+      name: 'math-calculate',
+      component: () => import('../views/math/CalculateView.vue')
+    },
+    {
       path: '/english',
       name: 'english',
       component: () => import('../views/EnglishView.vue')

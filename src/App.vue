@@ -9,7 +9,7 @@
             :width="56"
             style="margin-top: -16px"
         ></a-image>
-        <span class="title">银小维Edu</span>
+        <span class="title">银小维 · Edu</span>
       </div>
       <a-menu
           v-model:selectedKeys="selectedKeys"
@@ -78,7 +78,7 @@ export default {
   overflow: auto;
 }
 .logo{
-  width: 200px;
+  width: 220px;
   height: 64px;
   float: left;
 }
