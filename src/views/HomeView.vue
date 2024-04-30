@@ -2,7 +2,7 @@
   <a-image
       :src="`${baseUrl}/subject-outline.png`"
       :preview="false"
-      width="100%"
+      height="100vh"
   ></a-image>
 </template>
 <script>

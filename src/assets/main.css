@@ -1,8 +1,8 @@
 @import 'base.css';
 
 :root {
-    --image-background: url("/background.jpg") no-repeat fixed center;
-    --image-background-size: cover;
+    /*--image-background: url("/background.jpg") no-repeat fixed center;*/
+    /*--image-background-size: cover;*/
 }
 
 #app {
@@ -17,37 +17,37 @@
 
 #app .ant-breadcrumb{
     padding: 16px 20px;
-    color: #fff
+    /*color: #fff*/
 }
 
 #app .ant-breadcrumb a{
-    color: rgba(255, 255, 255, 0.45);
+    /*color: rgba(255, 255, 255, 0.45);*/
 }
 
 #app .ant-breadcrumb > span:last-child {
-    color: rgba(255, 255, 255, 0.85);
+    /*color: rgba(255, 255, 255, 0.85);*/
 }
 
 #app .main-content {
     padding: 0;
-    background-color: rgba(255, 255, 255, 0.60);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    /*background-color: rgba(255, 255, 255, 0.60);*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    /*background-attachment: fixed;*/
 }
 
 #app .ant-card {
-    background-image: url("/card-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: #fff;
+    /*background-image: url("/card-bg.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    /*background-attachment: fixed;*/
+    /*color: #fff;*/
 }
 
 #app .ant-card-head{
-    color: #fff;
+    /*color: #fff;*/
 }
 
 #app .ant-tabs{

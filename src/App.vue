@@ -21,6 +21,12 @@
         <a-menu-item key="math">数学</a-menu-item>
         <a-menu-item key="english">英语</a-menu-item>
         <a-menu-item key="chinese">语文</a-menu-item>
+        <a-menu-item key="history">历史</a-menu-item>
+        <a-menu-item key="geography">地理</a-menu-item>
+        <a-menu-item key="politics">政治</a-menu-item>
+        <a-menu-item key="physical">物理</a-menu-item>
+        <a-menu-item key="chemistry">化学</a-menu-item>
+        <a-menu-item key="biology">生物</a-menu-item>
       </a-menu>
     </a-layout-header>
     <a-layout-content>

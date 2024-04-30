@@ -33,6 +33,11 @@ const router = createRouter({
       path: '/chinese',
       name: 'chinese',
       component: () => import('../views/ChineseView.vue')
+    },
+    {
+      path: '/history',
+      name: 'history',
+      component: () => import('../views/HistoryView.vue')
     }
   ]
 })
